@@ -4,9 +4,10 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   font-family: "Poppins", sans-serif;
-  min-height: 100vh;
+  height: 100%;
 }
 .navbar {
   display: flex;
@@ -147,6 +148,7 @@ h4 {
 }
 small {
   color: #555;
+  text-align: justify;
 }
 
 /*---------------Testimonila-----------*/
@@ -207,6 +209,7 @@ small {
   font-size: 14px;
   padding: 60px 0 20px;
   bottom: 0;
+  margin-bottom: 0;
 }
 .footer p {
   color: #8a8a8a;
@@ -524,5 +527,11 @@ form .btn:focus {
   }
   .cart-info p {
     display: none;
+  }
+  .offer a {
+    margin-top: 20px;
+  }
+  .offer small {
+    text-align: justify;
   }
 }
