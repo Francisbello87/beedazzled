@@ -22,8 +22,8 @@
           <ul id="menuItems">
             <li><a href="index.html">Home</a></li>
             <li><a href="products.html">Products</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="404.html">About</a></li>
+            <li><a href="404.html">Contact</a></li>
             <li><a href="account.html">Account</a></li>
           </ul>
         </nav>
@@ -34,10 +34,10 @@
 </div>
 
 <!----------Account Page--------->
-<div class="account-page">
+<section class="account-page">
     <div class="container">
         <div class="row">
-            <div class="col-2">
+            <div class="col-2 account-image">
                 <img src="images/paladini-mauro-VUgfo7PKuCo-unsplash-removebg-preview.png">
             </div>
             <div class="col-2">
@@ -47,29 +47,52 @@
                         <span onclick="register()">Registration</span>
                         <hr id="indicator">
                     </div>
-                    <form id="login-form">
-                        <input type="text" placeholder="Username">
-                        <input type="password" placeholder="Password">
+                    <form action="/" id="login-form">
+                      <div class="input-control">
+                        <input id="username" name="username" type="text" placeholder="Username">
+                        <div class="error"></div>
+                      </div>
+                      <div class="input-control">
+                        <input id="login-password" name="login-password" type="password" placeholder="Password">
+                        <div class="error"></div>
+                      </div>
+                      <div class="flex-end">
                         <button type="submit" class="btn">Login</button>
+                      </div>
                         <a href="">Forgot password?</a>
                     </form>
 
-                    <form id="reg-form">
-                        <input type="text" placeholder="Full name">
-                        <input type="text" placeholder="Username">
-                        <input type="email" placeholder="Email">
-                        <input type="password" placeholder="Password">
+                    <form action="/" id="reg-form">
+                      <div class="input-control">
+                        <input id="fname" name="fname" type="text" placeholder="Full name">
+                        <div class="error"></div>
+                      </div>
+                      <div class="input-control">
+                        <input id="email" name="email" type="email" placeholder="Email">
+                        <div class="error"></div>
+                      </div>
+                      <div class="input-control">
+                        <input id="password" name="password" type="password" placeholder="Password">
+                        <div class="error"></div>
+                      </div>
+                      <div class="input-control">
+                        <input id="password2" name="password2" type="password" placeholder="Confirm password">
+                        <div class="error"></div>
+                      </div>
+                      <div class="flex-end">
                         <button type="submit" class="btn">Register</button>  
+                      </div>
+                    
                     </form>
                 </div>
             </div>
         </div>
     </div>
-</div>
+  </section>
 
 
 <!-------------Footer---------->
-<div class="footer">
+<footer class="footer">
   <div class="container">
     <div class="row">
       <div class="footer-col-1">
@@ -107,7 +130,7 @@
     <hr>
     <p class="copyright">Copyright 2021 - Francis Bello</p>
   </div>
-</div>
+</footer>
 
 <!-----------Js for toggle menu--------->
 <script src="script.js">
